@@ -1,0 +1,8 @@
+<div class="container">
+    <span>Daily Habits</span>
+    <span >08/25/2020</span>
+    <hr>
+    <app-list-item *ngFor="let habit of habits"
+                [habitInput]="habit"
+    ></app-list-item>
+</div>

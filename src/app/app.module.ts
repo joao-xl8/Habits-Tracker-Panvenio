@@ -3,10 +3,16 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HeaderComponent } from './header/header.component';
+import { HabitListComponent } from './habit-list/habit-list.component';
+import { ListItemComponent } from './habit-list/list-item/list-item.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent,
+    HabitListComponent,
+    ListItemComponent
   ],
   imports: [
     BrowserModule,

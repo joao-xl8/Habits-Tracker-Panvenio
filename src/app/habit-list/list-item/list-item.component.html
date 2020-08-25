@@ -1,0 +1,26 @@
+<div class="row">
+    <div class="col-xs-6">
+        <div class="habit-container">
+            <span>{{habitInput.name}}</span>
+                <div class="loading-container">
+                <div class="progress">
+                    <div  
+                        class="progress-bar progress-bar-striped progress-bar-animated" 
+                        role="progressbar" 
+                        [ngStyle]="{width: (onValuePercent(habitInput.progress) + '%')}" 
+                        [attr.aria-valuenow]="habitInput.progress"
+                        aria-valuemin="0"
+                    >
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-2">
+        <div class="button-container">
+            <button class="btn btn-success">+</button>
+            <button class="btn btn-danger">-</button>
+        </div>
+    </div>
+</div>

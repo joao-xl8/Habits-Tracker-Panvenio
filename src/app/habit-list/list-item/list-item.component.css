@@ -1,0 +1,21 @@
+.habit-container {
+  height: 79px;
+  width: 755px;
+  background-color: #F8F8F8;
+  padding: 12px;
+  margin: 20px 0;
+  font-size: 18px;
+}
+
+.button-container {
+  height: 79px;
+  width: 97px;
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* .loading-container {
+  display: flex;
+  flex-direction: row;
+} */

@@ -3,6 +3,18 @@
   background-color: #793BC1;
 }
 
+.navbar-brand {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+}
+
+.navbar-brand svg {
+  margin-bottom: 5px;
+  margin-right: 10px;
+}
+
 .btn-add {
   display: flex;
   flex-direction: row;

@@ -7,18 +7,29 @@ import { Habit } from '../habit.model';
   styleUrls: ['./list-item.component.css']
 })
 export class ListItemComponent implements OnInit {
-  @Input() habitInput: Habit= new Habit('',"0");
+  @Input() habitInput: Habit = new Habit('', 0);
+  disabledButton = false
   habitString = '0';
   MAXDAYS = 21;
   constructor() { }
 
   ngOnInit(): void {
   }
-  
-  onValuePercent(habitInput:string) : string{
-    let habitNumber = parseInt(habitInput)
-    habitNumber = habitNumber*100/this.MAXDAYS
-    this.habitString = String(habitNumber)
-    return this.habitString
+
+  onValuePercent(habitInput: number): string{
+    let habitNumber = habitInput;
+    habitNumber = habitNumber * 100 / this.MAXDAYS;
+    this.habitString = String(habitNumber);
+    return this.habitString;
+  }
+
+  onUpClick(): void{
+    this.habitInput.progress = this.habitInput.progress + 1;
+    this.disabledButton = true;
+  }
+
+  onDownClick(): void{
+    this.habitInput.progress = this.habitInput.progress - 2;
+    this.disabledButton = true;
   }
 }

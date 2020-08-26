@@ -7,10 +7,12 @@ import { Habit } from './habit.model';
   styleUrls: ['./habit-list.component.css']
 })
 export class HabitListComponent implements OnInit {
-  habits: Habit[]=[
-    new Habit('Hang Out', "10"),
-    new Habit('Walk', "20"),
-    new Habit('Sleep', "21")
+  today = new Date();
+  date = (this.today.getUTCMonth() + 1) + '/' + this.today.getDate() + '/' + this.today.getFullYear();
+  habits: Habit[] = [
+    new Habit('Hang Out', 10),
+    new Habit('Walk', 20),
+    new Habit('Sleep', 21)
   ];
   constructor() { }
 

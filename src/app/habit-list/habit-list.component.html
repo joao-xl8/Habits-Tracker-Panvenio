@@ -2,7 +2,7 @@
 <div class="container habit-list-container">
   <div class="habit-list-titlebar">
     <span>Daily Habits</span>
-    <span class="float-right">08/25/2020</span>
+    <span class="float-right">{{date}}</span>
     <hr>
   </div>
   <app-list-item *ngFor="let habit of habits" [habitInput]="habit">

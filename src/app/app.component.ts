@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  item = "";
+
+  onItemReceived(event: string): void {
+    this.item = event;
+  }
 
 }

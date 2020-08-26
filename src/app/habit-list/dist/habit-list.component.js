@@ -11,14 +11,25 @@ var core_1 = require("@angular/core");
 var habit_model_1 = require("./habit.model");
 var HabitListComponent = /** @class */ (function () {
     function HabitListComponent() {
-        this.habits = [
-            new habit_model_1.Habit('Hang Out', "10"),
-            new habit_model_1.Habit('Walk', "20"),
-            new habit_model_1.Habit('Sleep', "21")
-        ];
+        this.today = new Date();
+        this.date = (this.today.getUTCMonth() + 1) + '/' + this.today.getDate() + '/' + this.today.getFullYear();
+        this.habits = [];
+        this.itemNameInput = "";
     }
+    HabitListComponent.prototype.ngOnChanges = function (changes) {
+        this.pushName();
+    };
     HabitListComponent.prototype.ngOnInit = function () {
     };
+    HabitListComponent.prototype.pushName = function () {
+        if (this.itemNameInput !== '') {
+            //console.log(this.itemNameInput + 'estou na list');
+            this.habits.push(new habit_model_1.Habit(this.itemNameInput, 0));
+        }
+    };
+    __decorate([
+        core_1.Input()
+    ], HabitListComponent.prototype, "itemNameInput");
     HabitListComponent = __decorate([
         core_1.Component({
             selector: 'app-habit-list',

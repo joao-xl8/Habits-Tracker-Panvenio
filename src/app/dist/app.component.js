@@ -10,7 +10,11 @@ exports.AppComponent = void 0;
 var core_1 = require("@angular/core");
 var AppComponent = /** @class */ (function () {
     function AppComponent() {
+        this.item = "";
     }
+    AppComponent.prototype.onItemReceived = function (event) {
+        this.item = event;
+    };
     AppComponent = __decorate([
         core_1.Component({
             selector: 'app-root',

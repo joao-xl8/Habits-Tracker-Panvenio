@@ -1,10 +1,12 @@
 .habit-container {
   height: 79px;
-  width: 755px;
+  width: 658px;
   background-color: #F8F8F8;
   padding: 12px;
   margin: 20px 0;
+  font-family: quicksand-semi-bold;
   font-size: 18px;
+  color: #4A4A4A;
 }
 
 .button-container {

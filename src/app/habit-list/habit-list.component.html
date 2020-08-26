@@ -1,8 +1,10 @@
-<div class="container">
+
+<div class="container habit-list-container">
+  <div class="habit-list-titlebar">
     <span>Daily Habits</span>
-    <span >08/25/2020</span>
+    <span class="float-right">08/25/2020</span>
     <hr>
-    <app-list-item *ngFor="let habit of habits"
-                [habitInput]="habit"
-    ></app-list-item>
+  </div>
+  <app-list-item *ngFor="let habit of habits" [habitInput]="habit">
+  </app-list-item>
 </div>

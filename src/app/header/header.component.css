@@ -1,0 +1,15 @@
+.navbar {
+  font-family: quicksand-bold;
+  background-color: #793BC1;
+}
+
+.btn-add {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+}
+
+.btn-add span {
+  padding-right: 10px;
+}

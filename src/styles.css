@@ -1,4 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: quicksand;
+  src: url(assets/font/Quicksand-Medium.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: quicksand-semi-bold;
+  src: url(assets/font/Quicksand-SemiBold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: quicksand-bold;
+  src: url(assets/font/Quicksand-Bold.ttf) format("truetype");
+}
+
 body {
   background-color: #EBEDEE;
+  font-family: quicksand;
 }
